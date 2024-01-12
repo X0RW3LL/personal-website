@@ -1,0 +1,10 @@
+[book]
+authors = ["X0RW3LL"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Order From Chaos"
+description = "On the internet, nobody knows you're a dog"
+
+[output.html]
+additional-css = ["src/styles/custom.css"]
