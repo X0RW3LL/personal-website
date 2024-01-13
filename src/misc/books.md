@@ -17,6 +17,7 @@
 - [Blue Fox: Arm Assembly Internals and Reverse Engineering, by Maria Markstedter](https://www.amazon.com/Blue-Fox-Assembly-Internals-Engineering-ebook/dp/B0C2B5SLYM)
 - [RTFM: Red Team Field Manual v2, by Clark, Ben; Downer, Nick](https://www.amazon.com/RTFM-Red-Team-Field-Manual-ebook/dp/B0B7H8X3XY)
 - [The Debian Administrator's Handbook, by Hertzog, Raphaël; Mas, Roland](https://www.debian.org/doc/manuals/debian-handbook)
+- [A Practical Guide to TPM 2.0: Using the Trusted Platform Module in the New Age of Security, by Arthur, Will; Challener, David](https://a.co/d/7912sSw)
 
 ## Science/History/Mythology
 
