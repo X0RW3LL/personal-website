@@ -229,7 +229,7 @@ Cooling 7: Processor 0 of 10
 
 And just like that! We can now see _another_ thermal trip point that was previously not there, and it is indeed the passive cooling trip point!
 
-Now, I don't like the fact that it's set to 96 decrees Celsius; that only means that active cooling will be preferred until thermals are at 96 degress. I'd much rather run a fairly silent system, so this is what we'll be looking at next
+Now, I don't like the fact that it's set to 96 degress Celsius; that only means that active cooling will be preferred until thermals are at 96 degress. I'd much rather run a fairly silent system, so this is what we'll be looking at next
 
 [^1]: [_PSL (Passive List)](https://uefi.org/specs/ACPI/6.5/11_Thermal_Management.html#psl-passive-list)
 
