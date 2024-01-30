@@ -1,5 +1,7 @@
 # Movies
 
+- [Society of the Snow](https://www.netflix.com/title/81268316)
+- [Killers of the Flower Moon](https://tv.apple.com/us/movie/killers-of-the-flower-moon/umc.cmc.5x1fg9vferlfeutzpq6rra1zf)
 - [Tetris](https://tv.apple.com/us/movie/tetris/umc.cmc.4evmgcam356pzgxs2l7a18d7b)
 - [Don't Look Up](https://www.netflix.com/title/81252357)
 - [Inception](https://www.netflix.com/de-en/title/70131314) (Netflix DE)
