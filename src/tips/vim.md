@@ -23,7 +23,7 @@ Find out more about each option by issuing `:h '<option>'`
 - _(NORMAL)_ `3w`: jump 3 words forward (cursor is placed at the beginning of the Nth word)
 - _(NORMAL)_ `5b`: jump 5 words backward
 - _(NORMAL)_ `gg`: jump to top (file)
-- _(NORMAL)_ `GG`: jump to bottom (file)
+- _(NORMAL)_ `G`: jump to bottom (file)
 - _(NORMAL)_ `zz`: position line under the cursor at the middle of the screen
 - _(Ex-mode)_ `:N`: jump to line #`N`
 - `$ vim <file> +N`: open `<file>` placing the cursor at line `N`
