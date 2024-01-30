@@ -34,7 +34,7 @@
 
 - [Bash (WIP)]()
     - [Functions & Aliases (WIP)]()
-- [Vim (WIP)]()
+- [VIM](tips/vim.md)
 - [Python (WIP)]()
 - [Git (WIP)]()
 - [The Root of All Evil (WIP)]()
