@@ -34,6 +34,7 @@ Find out more about each option by issuing `:h '<option>'`
 - _(Ex-mode)_ `:term`: open a terminal in a horizontally-split window
 - _(Ex-mode)_ `:vsp <file>`: open `<file>` in a vertically-split window
 - _(Ex-mode)_ `:vert term`: open a terminal in a vertically-split window
+- _(NORMAL)_ `Ctrl+ww`: cycle between splits (replace second `w` with `h|j|k|l` to move in a specific direction between splits)
 
 ## Text manipulation
 
