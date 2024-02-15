@@ -1,6 +1,7 @@
 # Summary
 
 [Introduction](intro.md)
+[Changelog](changelog.md)
 
 # Blog
 
@@ -32,8 +33,8 @@
 
 # Tips, Tricks, and Gotchas
 
-- [Bash (WIP)]()
-    - [Functions & Aliases (WIP)]()
+- [Bash](tips/bash.md)
+    - [Functions & Aliases](tips/func-alias.md)
 - [VIM](tips/vim.md)
 - [Python (WIP)]()
 - [Git (WIP)]()
