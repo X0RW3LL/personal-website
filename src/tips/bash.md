@@ -30,7 +30,7 @@ Next, we'll use Bash's handy `edit-and-execute-command` by invoking the shortcut
 
 ## Character repitition
 
-This is for all the buffer overflow lovers out there. Have you ever caught yourself doing something silly like `python -c 'print("A"*200)'? Let's look at the numbers, Jim; that's about 31 keystrokes, right?
+This is for all the buffer overflow lovers out there. Have you ever caught yourself doing something silly like `python -c 'print("A"*200)'`? Let's look at the numbers, Jim; that's about 31 keystrokes, right?
 
 Let's bring those down to 6. Alt+{count}, followed by the character we want repeated, "A" in this case, does just that. Try Alt+200 A; you hold down the Alt key while inputting 2,0,0, release the Alt key, then Shift+a (A)
 
