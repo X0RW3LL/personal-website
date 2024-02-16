@@ -75,7 +75,7 @@ So how do we fix this quickly? `C-x s`. That is `Ctrl+x` then `s`. It really is 
 - `M-d`: delete the word under the cursor (forward deletion)
 - `C-w`: delete one word behind the cursor
 - `C-u`: delete everything behind the cursor
-- `M-r`: delete everything regardless of cursor position
+- `M-r`: revert changes made to current line
 - `M-#`: comment out the current line (useful if you wanna hold onto a command for later reference)
 - `M-t`: transpose words behind the cursor (useful for flipping argument ordering, for example)
 - `C-t`: transpose characters behind the cursor (useful for fixing typos like `claer` => `clear`)
