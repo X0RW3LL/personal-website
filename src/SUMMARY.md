@@ -56,3 +56,8 @@
 - [Books](misc/books.md)
 
 ---
+
+# DANGER ZONE
+
+- [Prologue](thoughts/prologue.md)
+- [It's a dog-eat-dog world](thoughts/dog_eat_dog.md)
