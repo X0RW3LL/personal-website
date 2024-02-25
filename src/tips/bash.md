@@ -85,7 +85,7 @@ So how do we fix this quickly? `C-x s`. That is `Ctrl+x` then `s`. It really is 
 
 ## Macros
 
-Let's say there's a handful of repeating commands/functions that you'd like to issue, but you couldn't be bothered to write a script/alias/function for it, or you simply only need them for that one shell session. There is where keyboard macros shine. The process is as follows: start recording the macro, type out (and/or execute) whatever commands to be recorded, end the macro recording, and finally execute the macro at any point later in the same shell. Here's an example
+Let's say there's a handful of repeating commands/functions that you'd like to issue, but you couldn't be bothered to write a script/alias/function for it, or you simply only need them for that one shell session. This is where keyboard macros shine. The process is as follows: start recording the macro, type out (and/or execute) whatever commands to be recorded, end the macro recording, and finally execute the macro at any point later in the same shell. Here's an example
 
 ```sh
 # Ctrl+x (
