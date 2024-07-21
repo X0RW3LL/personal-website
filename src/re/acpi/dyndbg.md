@@ -16,7 +16,7 @@ CONFIG_DYNAMIC_DEBUG_CORE=y   # enable mechanics only, skip catalog
 In the dynamic debug documentation referenced above, we can find all the information pertinent to setting up filters. Let's first start by searching the available function filters to find out whether or not we can debug the function we're interested. Every prompt shown from hereon out is assumed to be running as root
 
 ```sh
-$ grep crb_map_io /sys/kernel/tracing/available_function_filters
+$ grep crb_map_io /sys/kernel/tracing/available_filter_functions
 crb_map_io
 ```
 
