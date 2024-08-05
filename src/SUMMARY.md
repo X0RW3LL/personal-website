@@ -33,12 +33,14 @@
 
 # Tips, Tricks, and Gotchas
 
+- [The Root of All Evil](tips/root.md)
+    - [Exhibit A: Mi Kali, su Kali <3](tips/root-ex-a.md)
+    - [Exhibit B: O' Filesystem, where art thou?](tips/root-ex-b.md)
 - [Bash](tips/bash.md)
     - [Functions & Aliases](tips/func-alias.md)
 - [VIM](tips/vim.md)
 - [Python (WIP)]()
 - [Git (WIP)]()
-- [The Root of All Evil (WIP)]()
 
 ---
 
