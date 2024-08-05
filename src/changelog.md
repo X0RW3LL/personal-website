@@ -1,5 +1,10 @@
 # Changelog
 
+2024-08-05
+==========
+
+- [Tips, Tricks, and Gotchas - The Root of All Evil](tips/root.md): add the long-awaited yelling at root lovers
+
 2024-02-25
 ==========
 
