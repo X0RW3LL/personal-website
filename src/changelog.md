@@ -1,5 +1,10 @@
 # Changelog
 
+2024-09-13
+==========
+
+- [Exhibit C: The case against /usr/local](tips/root-ex-c.md): add demo for Python/pip issues
+
 2024-08-05
 ==========
 

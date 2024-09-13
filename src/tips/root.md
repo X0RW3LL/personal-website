@@ -47,6 +47,7 @@ Where do we even begin? Let's populate a list of things:
 
 - Dear baddies, here's my entire computer at your disposal, with love xoxo (see [Exhibit A: Mi Kali, su Kali <3](root-ex-a.md))
 - Accidental data loss (`sudo rm -rf /oops/i/didnt/mean/to/remove/the/entire/etc/directory111one1eleven1`) (see [Exhibit B: O' Filesystem, where art thou?](root-ex-b.md))
+- Python import path conflicts (see [Exhibit C: The case against /usr/local](root-ex-c.md))
 - Broken permissions? Who needs 'em anyway, amirite?
 - Wait, wtf is `DISPLAY :0`? And why can't root just "open" it?
 - Oh, you killed the wrong PID? Sucks to be you

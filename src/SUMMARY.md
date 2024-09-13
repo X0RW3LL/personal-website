@@ -36,6 +36,7 @@
 - [The Root of All Evil](tips/root.md)
     - [Exhibit A: Mi Kali, su Kali <3](tips/root-ex-a.md)
     - [Exhibit B: O' Filesystem, where art thou?](tips/root-ex-b.md)
+    - [Exhibit C: The case against /usr/local](tips/root-ex-c.md)
 - [Bash](tips/bash.md)
     - [Functions & Aliases](tips/func-alias.md)
 - [VIM](tips/vim.md)
