@@ -1,5 +1,12 @@
 # Changelog
 
+2024-09-14
+==========
+
+- [Exhibit D: Look how they massacred my perms](tips/root-ex-d.md): add permissions demo
+- [Exhibit E: Can't see me](tips/root-ex-e.md): add broken DISPLAY demo
+- [Exhibit F: Merciless killing](tips/root-ex-f.md): add demo for killing wrong PIDs by mistake
+
 2024-09-13
 ==========
 
