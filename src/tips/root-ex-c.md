@@ -49,7 +49,7 @@ zope.interface                 6.4
 zstandard                      0.23.0.dev0
 ```
 
-`pip` happily lists all the packages installed in that location, which is everything currenlty installed with its package name prefixed with `python3-`.
+`pip` happily lists all the packages installed in that location, which is everything currenlty installed with its package name prefixed with `python3-`
 
 ## Enter: Trouble
 
@@ -67,7 +67,7 @@ requests           2.32.3
 root@1984:~#
 ```
 
-Now we have a real problem: we have two different versions of `requests`, namely `2.31.0` and `2.32.3` installed in two different locations; `/usr/lib/python3/dist-packages` and `/usr/local/lib/python3.11/dist-packages`. What does this mean? Well, different programs/scripts will be extremely unreliable when it comes to importing `requests`. They might end up importing one version or the other, depending on who's calling, where, under which context, etc. Moreover, some tools will have _exactly equal_ Depends. That means that the tool is designed to work with a specific version of a library. This might be due to deprecated APIs, or other decisions made by the tool developer(s).
+Now we have a real problem: we have two different versions of `requests`, namely `2.31.0` and `2.32.3` installed in two different locations; `/usr/lib/python3/dist-packages` and `/usr/local/lib/python3.11/dist-packages`. What does this mean? Well, different programs/scripts will be extremely unreliable when it comes to importing `requests`. They might end up importing one version or the other, depending on who's calling, where, under which context, etc. Moreover, some tools will have _exactly equal_ Depends. That means that the tool is designed to work with a specific version of a library. This might be due to deprecated APIs, or other decisions made by the tool developer(s)
 
 
 ## Demo
@@ -146,7 +146,96 @@ Right off the bat, besides the obvious location, we now have a _downgraded_ vers
 
 <img class="center" alt="Screenshot showing impacket-ntlmrelayx breaking due to conflicting versions of impacket being installed in two different locations" src="../../assets/img/screenshots/tips/root-ex-c-impacket.png"/>
 
-Sure enough, we definitely broke system packages! Even worse, the above error output doesn't even say much about what's _actually_ wrong; it just complained that `NTLMRelayxConfig` has no attribute `setAddComputerSMB`. This attribute could have been added in the newer release of the package, or a result of conflicting import paths; one would have to really dig into it, line by line, to figure out where/what the problem is.
+Sure enough, we definitely broke system packages! Even worse, the above error output doesn't even say much about what's _actually_ wrong; it just complained that `NTLMRelayxConfig` has no attribute `setAddComputerSMB`. This attribute could have been added in the newer release of the package, or a result of conflicting import paths; one would have to really dig into it, line by line, to figure out where/what the problem is
+
+## Fixing the mess
+
+The million-dollar question is: how does one fix this dependency hell? The answer is quite simple, really. All we need to do is filter those packages located at `/usr/local/lib/python*/dist-packages`, and uninstall them with elevated privileges much like they were originally installed. At this point, saving the package list to a file can be a good idea in case we want to install some of those packages properly later. For the purpose of this demo, I am going to have a bunch of externally-managed packages installed via `pip` so we can take a look at automating an otherwise tedious process
+
+```sh
+┌──(test㉿1984)-[~]
+└─$ pip list --path /usr/local/lib/python3.11/dist-packages/
+Package            Version
+------------------ ---------
+aesedb             0.1.6
+aiosmb             0.4.11
+aiowinreg          0.0.12
+asn1crypto         1.5.1
+asyauth            0.0.21
+asysocks           0.2.13
+blinker            1.8.2
+certifi            2024.8.30
+cffi               1.17.1
+chardet            5.2.0
+charset-normalizer 3.3.2
+click              8.1.7
+colorama           0.4.6
+cryptography       43.0.1
+dnspython          2.6.1
+dsinternals        1.2.4
+Flask              3.0.3
+future             1.0.0
+h11                0.14.0
+idna               3.8
+impacket           0.11.0
+itsdangerous       2.2.0
+Jinja2             3.1.4
+ldap3              2.9.1
+ldapdomaindump     0.9.4
+lsassy             3.1.12
+markdown-it-py     3.0.0
+MarkupSafe         2.1.5
+mdurl              0.1.2
+minidump           0.0.24
+minikerberos       0.4.4
+msldap             0.5.12
+netaddr            1.3.0
+oscrypto           1.3.0
+prompt_toolkit     3.0.47
+pyasn1             0.6.1
+pycparser          2.22
+pycryptodomex      3.20.0
+Pygments           2.18.0
+pyOpenSSL          24.2.1
+pypykatz           0.6.10
+requests           2.32.3
+rich               13.8.1
+six                1.16.0
+tabulate           0.9.0
+tqdm               4.66.5
+unicrypto          0.0.10
+urllib3            2.2.3
+wcwidth            0.2.13
+Werkzeug           3.0.4
+winacl             0.1.9
+```
+
+As we can see, there's a considerable number of externally-managed packages that need to be dealt with. Since we're all about automation, let's get creative with a one-liner that does just that
+
+```sh
+┌──(test㉿1984)-[~]
+└─$ pip list --path /usr/local/lib/python3.11/dist-packages/ | cut -d ' ' -f1 | egrep -v '^Package|---*' | tr '\n' ' '
+aesedb aiosmb aiowinreg asn1crypto asyauth asysocks blinker certifi cffi chardet charset-normalizer click colorama cryptography dnspython dsinternals Flask future h11 idna impacket itsdangerous Jinja2 ldap3 ldapdomaindump lsassy markdown-it-py MarkupSafe mdurl minidump minikerberos msldap netaddr oscrypto prompt_toolkit pyasn1 pycparser pycryptodomex Pygments pyOpenSSL pypykatz requests rich six tabulate tqdm unicrypto urllib3 wcwidth Werkzeug winacl
+```
+
+We used `cut -d ' ' -f1` to simply grab the first thing that's not a space, which happens to be the package names. We then `egrep -v '^Package|---*'` to filter out irrelevant output that would break the uninstall process since `Package` and `---------` are obviously not valid Python packages. Finally, we used `tr '\n' ' '` to translate newlines into spaces instead. Now that we got the desired output, let's incorporate it into the final `pip` command
+
+```sh
+┌──(test㉿1984)-[~]
+└─$ sudo pip uninstall -y $(pip list --path /usr/local/lib/python3.11/dist-packages/ | cut -d ' ' -f1 | egrep -v '^Package|---*' | tr '\n' ' ')
+Found existing installation: aesedb 0.1.6
+Uninstalling aesedb-0.1.6:
+  Successfully uninstalled aesedb-0.1.6
+Found existing installation: aiosmb 0.4.11
+Uninstalling aiosmb-0.4.11:
+  Successfully uninstalled aiosmb-0.4.11
+Found existing installation: aiowinreg 0.0.12
+Uninstalling aiowinreg-0.0.12:
+  Successfully uninstalled aiowinreg-0.0.12
+...
+```
+
+To confirm, we can run the listing again, and sure enough, all those externally-managed packages are now a thing of the past
 
 ## Closing thoughts
 
