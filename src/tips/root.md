@@ -48,9 +48,9 @@ Where do we even begin? Let's populate a list of things:
 - Dear baddies, here's my entire computer at your disposal, with love xoxo (see [Exhibit A: Mi Kali, su Kali <3](root-ex-a.md))
 - Accidental data loss (`sudo rm -rf /oops/i/didnt/mean/to/remove/the/entire/etc/directory111one1eleven1`) (see [Exhibit B: O' Filesystem, where art thou?](root-ex-b.md))
 - Python import path conflicts (see [Exhibit C: The case against /usr/local](root-ex-c.md))
-- Broken permissions? Who needs 'em anyway, amirite?
-- Wait, wtf is `DISPLAY :0`? And why can't root just "open" it?
-- Oh, you killed the wrong PID? Sucks to be you
+- Broken permissions? Who needs 'em anyway, amirite? (see [Exhibit D: Look how they massacred my perms](root-ex-d.md))
+- Wait, wtf is `DISPLAY :0`? And why can't root just "open" it? (see [Exhibit E: Can't see me](root-ex-e.md))
+- Oh, you killed the wrong PID? Sucks to be you (see [Exhibit F: Merciless killing](root-ex-f.md))
 
 Let's face it: we __ALL__ make mistakes. Some of these mistakes might be forgivable, and some others...not so much. Deleting a text file that just says "test" is meh, but deleting an entire directory like /usr, /boot, /etc, or whatever else by mistake? That's an unforgivably expensive mistake with no one to blame but yourself. You might think "oh, I definitely know better than all those losers that don't know what they're doing", and you'd still be absolutely wrong. Everyone makes mistakes; you, me, that guy over there, that girl on the other side of the globe, those people studying arctic climate--_everyone_. You're certainly not better, but if you let your ego take you down that joyride, by all means enjoy it until you don't.
 
