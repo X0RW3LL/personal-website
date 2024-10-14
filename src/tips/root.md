@@ -34,7 +34,7 @@ But what _are_ privileged actions? Here are a few examples:
 
 Anything that does _not_ __require__ privileged access **SHOULD NOT** be given one. Here are some examples:
 
-- Starting the browser to navigate the World Wide Web (if you do this, please throw your laptop out the window until you understand why that's terrible)
+- Starting the browser to navigate the World Wide Web (if you do this as a privileged user, please throw your laptop out the window until you understand why that's terrible)
 - Reading, writing, executing, and/or removing (user|group)-owned files
 - SSH, SMB, FTP, TELNET, SMTP, SNMP, HTTP, ... access
 - Managing __user__ services
