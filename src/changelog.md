@@ -1,5 +1,10 @@
 # Changelog
 
+2024-12-26
+==========
+
+- [apt-patterns](tips/apt-patterns.md): add apt-patterns demo
+
 2024-09-14
 ==========
 

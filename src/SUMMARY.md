@@ -43,6 +43,7 @@
 - [Bash](tips/bash.md)
     - [Functions & Aliases](tips/func-alias.md)
 - [VIM](tips/vim.md)
+- [apt-patterns](tips/apt-patterns.md)
 - [Python (WIP)]()
 - [Git (WIP)]()
 
