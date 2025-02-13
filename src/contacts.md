@@ -6,4 +6,3 @@ You can find me on any of the following channels:
 - [GitHub](https://github.com/X0RW3LL)
 - [GitLab](https://gitlab.com/X0RW3LL)
 - [Discord](https://discord.com/users/689420748481495214)
-- [Twitter](https://twitter.com/@X0RW3LL)
