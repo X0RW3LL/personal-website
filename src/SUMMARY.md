@@ -3,12 +3,25 @@
 [Introduction](intro.md)
 [Changelog](changelog.md)
 
-# Blog
+# Tips, Tricks, and Gotchas
 
-- [OSCP](blog/oscp/oscp.md)
-    - [How it started](blog/oscp/how_it_started.md)
-    - [How it went](blog/oscp/how_it_went.md)
-    - [Lessons learned](blog/oscp/lessons_learned.md)
+- [The Root of All Evil](tips/root.md)
+    - [Exhibit A: Mi Kali, su Kali <3](tips/root-ex-a.md)
+    - [Exhibit B: O' Filesystem, where art thou?](tips/root-ex-b.md)
+    - [Exhibit C: The case against /usr/local](tips/root-ex-c.md)
+    - [Exhibit D: Look how they massacred my perms](tips/root-ex-d.md)
+    - [Exhibit E: Can't see me](tips/root-ex-e.md)
+    - [Exhibit F: Merciless killing](tips/root-ex-f.md)
+- [Bash](tips/bash.md)
+    - [Functions & Aliases](tips/func-alias.md)
+- [VIM](tips/vim.md)
+- [apt-patterns](tips/apt-patterns.md)
+- [Python](tips/python.md)
+    - [The infamous Traceback (most recent call last)](tips/python/traceback.md)
+    - [Getting help()](tips/python/getting_help.md)
+    - [Finding and installing Python packages correctly](tips/python/installing_packages.md)
+    - [Handling externally-managed Python packages with virtual environments](tips/python/venv.md)
+- [Git (WIP)]()
 
 ---
 
@@ -31,21 +44,12 @@
 
 ---
 
-# Tips, Tricks, and Gotchas
+# Blog
 
-- [The Root of All Evil](tips/root.md)
-    - [Exhibit A: Mi Kali, su Kali <3](tips/root-ex-a.md)
-    - [Exhibit B: O' Filesystem, where art thou?](tips/root-ex-b.md)
-    - [Exhibit C: The case against /usr/local](tips/root-ex-c.md)
-    - [Exhibit D: Look how they massacred my perms](tips/root-ex-d.md)
-    - [Exhibit E: Can't see me](tips/root-ex-e.md)
-    - [Exhibit F: Merciless killing](tips/root-ex-f.md)
-- [Bash](tips/bash.md)
-    - [Functions & Aliases](tips/func-alias.md)
-- [VIM](tips/vim.md)
-- [apt-patterns](tips/apt-patterns.md)
-- [Python (WIP)]()
-- [Git (WIP)]()
+- [OSCP](blog/oscp/oscp.md)
+    - [How it started](blog/oscp/how_it_started.md)
+    - [How it went](blog/oscp/how_it_went.md)
+    - [Lessons learned](blog/oscp/lessons_learned.md)
 
 ---
 
@@ -53,18 +57,3 @@
 
 - [Contacts](contacts.md)
 
----
-
-# Misc.
-
-- [Music](misc/music.md)
-- [Movies](misc/movies.md)
-- [Series TV](misc/series-tv.md)
-- [Books](misc/books.md)
-
----
-
-# DANGER ZONE
-
-- [Prologue](thoughts/prologue.md)
-- [It's a dog-eat-dog world](thoughts/dog_eat_dog.md)
