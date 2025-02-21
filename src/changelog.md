@@ -1,6 +1,6 @@
 # Changelog
 
-2025-02-13
+2025-02-21
 ==========
 
 - [Git](tips/git.md): added a new entry for Git
