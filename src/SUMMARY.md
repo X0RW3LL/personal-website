@@ -21,7 +21,7 @@
     - [Getting help()](tips/python/getting_help.md)
     - [Finding and installing Python packages correctly](tips/python/installing_packages.md)
     - [Handling externally-managed Python packages with virtual environments](tips/python/venv.md)
-- [Git (WIP)]()
+- [Git](tips/git.md)
 
 ---
 
