@@ -3,6 +3,11 @@
 2025-02-13
 ==========
 
+- [Git](tips/git.md): added a new entry for Git
+
+2025-02-13
+==========
+
 - [Python](tips/python.md): added a new entry for Python
 - Removed {misc,thoughts}
 - Unreferenced dead links
