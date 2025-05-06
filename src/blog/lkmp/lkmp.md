@@ -90,7 +90,7 @@ I owe a great deal of where I am today to the following amazing people:
   - Joseph O'Gorman
   - Arnaudr Rebillout
   - Ben Wilson
-  - Sohpie Brun
+  - Sophie Brun
   - Raphael Hertzog
 - The Linux Foundation:
   - Linus Torvalds
