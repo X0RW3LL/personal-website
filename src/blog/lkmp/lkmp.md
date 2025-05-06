@@ -1,4 +1,4 @@
-# Linux Kernel Bug Fixing Mentorship Program - Spring 2025
+# Surviving the Linux Kernel Bug Fixing Mentorship Program - Spring 2025
 
 ## What it isn't
 

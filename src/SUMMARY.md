@@ -46,7 +46,7 @@
 
 # Blog
 
-- [Linux Kernel Bug Fixing Mentorship Program - Spring 2025](blog/lkmp/lkmp.md)
+- [Surviving the Linux Kernel Bug Fixing Mentorship Program - Spring 2025](blog/lkmp/lkmp.md)
 - [OSCP](blog/oscp/oscp.md)
     - [How it started](blog/oscp/how_it_started.md)
     - [How it went](blog/oscp/how_it_went.md)

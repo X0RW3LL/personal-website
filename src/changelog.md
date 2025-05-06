@@ -3,7 +3,7 @@
 2025-05-06
 ==========
 
-- [Linux Kernel Bug Fixing Mentorship Program - Spring 2025](blog/lkmp/lkmp.md): added a new blog entry for LKMP
+- [Surviving the Linux Kernel Bug Fixing Mentorship Program - Spring 2025](blog/lkmp/lkmp.md): added a new blog entry for LKMP
 
 2025-02-21
 ==========
