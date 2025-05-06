@@ -98,6 +98,10 @@ I owe a great deal of where I am today to the following amazing people:
 - Intel:
   - Saket Dumbre
   - Andy Shevchenko
+- Pentesterlab:
+  - Louis Nyffenegger
+- OffSec:
+  - [Redacted] :P love y'all
 
 Be it changelogs, commit messages, public or private discussions, or emails—each one of the aforementioned individuals has helped me one way or another, directly or otherwise, get where I am today. I am grateful and honored to have gone through this journey with their continuous, unwavering support
 
